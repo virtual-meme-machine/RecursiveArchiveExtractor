@@ -1,0 +1,26 @@
+{
+    "window_title_main": "Recursive Archive Extractor",
+    "window_title_browse_dialog": "Select a directory",
+
+    "button_label_browse": "Browse",
+    "button_label_extract_all": "Extract All",
+    "button_label_scan": "Scan",
+    "button_label_cancel": "Cancel",
+
+    "section_label_root_path": "Root Directory:",
+    "section_label_file_list": "Archive Files:",
+    "section_label_progress_bar": "Extraction Progress:",
+    "section_label_extract_path": "Extraction Directory:",
+
+    "file_list_file_name": "File Name",
+    "file_list_file_path": "File Path",
+    "file_list_archive_format": "Format",
+    "file_list_archive_size": "Size",
+
+    "file_count_init_message": "    Select a root directory to begin",
+    "file_count_scan_start_message": "    Scanning...",
+    "file_count_string_singular": "Archive File Found",
+    "file_count_string_plural": "Archive Files Found",
+
+    "log_info_test": "test"
+}
