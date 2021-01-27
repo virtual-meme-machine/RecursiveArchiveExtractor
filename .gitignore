@@ -1,0 +1,7 @@
+# PyCharm Directories
+.idea
+env
+*__pycache__
+
+# Log file
+recursive_archive_extractor.log

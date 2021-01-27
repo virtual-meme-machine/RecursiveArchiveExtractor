@@ -35,6 +35,7 @@ Downloads
 - Fix scanning / cancel button issues
 - Window resizing
 - Add sorting to file list
+- Init script for setting up program
 - Checkboxes to select archive files to be extracted from the file list
 - Settings menu (toggle logging, language, etc.)
 - Package application as OS specific binaries (exe, app, elf, etc.)
