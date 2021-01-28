@@ -1,7 +1,7 @@
 ## Recursive Archive Extractor
 A simple utility for recursively extracting archive files to a single directory.
 
-![screen_shot](https://user-images.githubusercontent.com/46010615/106102154-d0b87100-60f3-11eb-9be6-6ebe30283ab6.png)
+![image](https://user-images.githubusercontent.com/46010615/106102840-dbbfd100-60f4-11eb-86ed-404b16252bed.png)
 
 Designed to handle annoying situations like this:
 ```
