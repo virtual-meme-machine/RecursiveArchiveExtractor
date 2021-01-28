@@ -32,9 +32,10 @@ Downloads
             └── archive_file_15.rar
 ```
 
-### Python library dependencies:
-- rarfile
-- wxPython
+### Dependencies:
+- Python 3.5+
+- rarfile Python library
+- wxPython Python library
 
 ### (Janky) Installation:
 ```
