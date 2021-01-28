@@ -1,6 +1,8 @@
 ## Recursive Archive Extractor
 A simple utility for recursively extracting archive files to a single directory.
 
+![screen_shot](https://user-images.githubusercontent.com/46010615/106102154-d0b87100-60f3-11eb-9be6-6ebe30283ab6.png)
+
 Designed to handle annoying situations like this:
 ```
 Downloads
@@ -30,12 +32,28 @@ Downloads
             └── archive_file_15.rar
 ```
 
-### TODO:
-- Finish adding logging to all workflows
-- Fix scanning / cancel button issues
+### Python library dependencies:
+- rarfile
+- wxPython
+
+### (Janky) Installation:
+```
+pip install wxpython
+pip install rarfile
+git clone https://github.com/virtual-meme-machine/RecursiveArchiveExtractor.git
+cd RecursiveArchiveExtractor
+python main.py
+```
+
+### Known issues:
+- Cancelling an in progress scan will sometimes not fully clear the file list in the gui
+- Cancel buttons don't kill spawned process threads immediately, this seems to be a limitation of Python
+
+### Upcoming features:
+- Support for additional archive formats, currently supports RAR and ZIP format archive files
 - Window resizing
 - Add sorting to file list
-- Init script for setting up program
+- Better installation method
 - Checkboxes to select archive files to be extracted from the file list
 - Settings menu (toggle logging, language, etc.)
 - Package application as OS specific binaries (exe, app, elf, etc.)
