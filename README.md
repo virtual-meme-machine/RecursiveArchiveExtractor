@@ -44,13 +44,16 @@ Downloads
 ### Upcoming Features:
 - Support for additional archive formats
 - Window resizing
-- Add sorting to file list
-- Better installation method
-- Checkboxes to select archive files to be extracted from the file list
+- Sorting functionality for archive file list
+- Checkboxes in file list to select archive files to be extracted
 - Settings menu (toggle logging, language, etc.)
 - Prebuilt applications for macOS, Linux, BSD, etc.
 - Safety check to prevent attempting to extract files to a location that does not have enough space for them
+- Alert dialogs when fatal errors occur
+- Chime sound or other form of notification when scan / extraction finishes
 
 ### Known Issues:
 - Cancelling an in progress scan will sometimes not fully clear the file list in the gui
 - Cancel buttons don't kill spawned process threads immediately, this seems to be a limitation of Python
+- rarfile Python library fails to extract some rar files with a 'tool not found' error
+- try excepts are missing from extraction workflow and probably other important locations
