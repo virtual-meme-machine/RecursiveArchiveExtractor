@@ -22,7 +22,11 @@ Downloads
     │       └── archive_file_9.zip
     └── Sub Folder 2
         ├── Sub Sub Folder 4
-        │   └── archive_file_10.rar
+        │   ├── archive_file_10.part1.rar
+        │   ├── archive_file_10.part2.rar
+        │   ├── archive_file_10.part3.rar
+        │   ├── archive_file_10.part4.rar
+        │   └── archive_file_10.part5.rar
         ├── Sub Sub Folder 5
         │   ├── archive_file_11.rar
         │   ├── archive_file_12.rar
@@ -32,29 +36,21 @@ Downloads
             └── archive_file_15.rar
 ```
 
-### Dependencies:
-- Python 3.5+
-- rarfile Python library
-- wxPython Python library
+### Features:
+- Easy to use GUI
+- Supports RAR and ZIP archive formats
+- Intelligently handles split archives to avoid extracting the same file multiple times
 
-### (Janky) Installation:
-```
-pip install wxpython
-pip install rarfile
-git clone https://github.com/virtual-meme-machine/RecursiveArchiveExtractor.git
-cd RecursiveArchiveExtractor
-python main.py
-```
-
-### Known issues:
-- Cancelling an in progress scan will sometimes not fully clear the file list in the gui
-- Cancel buttons don't kill spawned process threads immediately, this seems to be a limitation of Python
-
-### Upcoming features:
-- Support for additional archive formats, currently supports RAR and ZIP format archive files
+### Upcoming Features:
+- Support for additional archive formats
 - Window resizing
 - Add sorting to file list
 - Better installation method
 - Checkboxes to select archive files to be extracted from the file list
 - Settings menu (toggle logging, language, etc.)
-- Package application as OS specific binaries (exe, app, elf, etc.)
+- Prebuilt applications for macOS, Linux, BSD, etc.
+- Safety check to prevent attempting to extract files to a location that does not have enough space for them
+
+### Known Issues:
+- Cancelling an in progress scan will sometimes not fully clear the file list in the gui
+- Cancel buttons don't kill spawned process threads immediately, this seems to be a limitation of Python

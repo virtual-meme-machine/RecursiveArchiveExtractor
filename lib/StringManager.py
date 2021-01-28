@@ -53,9 +53,10 @@ class StringManager(object):
             SimpleLogger.log.fatal_msg(error_msg)
 
 
-def initialize_string_manager():
+def initialize_string_manager(data_dir):
     """Creates a static instance of the StringManager"""
     locale_code = locale.getdefaultlocale()[0]
+    strings_file = os.path.join(data_dir, f"strings-{locale_code}.json")
 
     global SM
-    SM = StringManager(os.path.join("data", f"strings-{locale_code}.json"))
+    SM = StringManager(strings_file)

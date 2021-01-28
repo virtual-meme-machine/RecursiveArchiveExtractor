@@ -10,7 +10,7 @@ WINDOW_SIZE = wx.Size(805, 675)
 class MainFrame(wx.Frame):
     """Main window for the application"""
 
-    def __init__(self):
+    def __init__(self, data_dir):
         """Initialize window parameters"""
         super().__init__(parent=None)
         SimpleLogger.log.info_msg("Initializing main window frame for application")
@@ -18,7 +18,7 @@ class MainFrame(wx.Frame):
 
         # Set window properties
         self.SetTitle(StringManager.SM.window_title_main)
-        self.SetIcon(wx.Icon(os.path.join("data", "icon.ico")))
+        self.SetIcon(wx.Icon(os.path.join(data_dir, "icon.ico")))
         self.EnableMaximizeButton(False)
         self.SetMinSize(WINDOW_SIZE)
         self.SetMaxSize(WINDOW_SIZE)

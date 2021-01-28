@@ -1,7 +1,11 @@
-# PyCharm Directories
+# PyCharm directories
 .idea
 env
 *__pycache__
+
+# Pyinstaller build directories
+build
+dist
 
 # Log file
 recursive_archive_extractor.log
